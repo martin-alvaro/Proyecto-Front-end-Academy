@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end Academy-Proyecto Final</title>
+    <script defer src="https://kit.fontawesome.com/ab15aef633.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="cv">
+                <h1>CV</h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#sobremi">INICIO</a></li>
+                    <li><a href="#habilidades">HABILIDADES</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div id="nav-icon" onclick="menuResponsive()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="sobremi">
+            <div class="container-img" >
+                <img src="./assets/foto.png" alt="Foto-Perfil">
+                <div class="datos">
+                    <button id="readMore_btn" onclick="mostrar()">Mas info</button>
+                    <span id="hideText" class="hideText">
+                        <p>Edad:<span id="dato1"></span></p>
+                        <p>Pais:<span id="dato2"></span></p>
+                        <p>Email:<span id="dato3"></span></p>
+                    </p>
+                </div>
+            </div>
+            <div class="sobremi">
+                <h2>Sobre mí</h2>
+                <h3>Hola, Soy <span> Eugene crawford</span></h3>
+                <h4>Soy Desarrolador Web</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Sed vulputate odio ut enim blandit. Aliquam purus sit amet luctus venenatis
+                    lectus magna fringilla. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Lorem sed risus
+                    ultricies tristique nulla aliquet. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Sit
+                    amet mauris commodo quis. Interdum velit euismod in pellentesque. Vitae semper quis lectus nulla at
+                    volutpat diam ut. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Sed
+                    velit dignissim sodales ut. Ut eu sem integer vitae. Cras ornare arcu dui vivamus arcu felis
+                    bibendum ut tristique.
+                    Neque laoreet suspendisse interdum consectetur libero id. Pretium viverra suspendisse potenti nullam
+                    ac tortor. Vitae congue mauris rhoncus aenean vel elit. Iaculis eu non diam phasellus vestibulum
+                    lorem. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Sed cras ornare arcu dui
+                    vivamus arcu. Auctor augue mauris augue neque. Egestas integer eget aliquet nibh praesent. Convallis
+                    a cras semper auctor neque vitae. </p>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2>MIS HABILIDADES</h2>
+            <div id="hab">
+             
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>CONTÁCTAME</h2>
+
+            <form action="" method="get">
+                <div class="fila_junta">
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="fila">
+                    <input type="text" name="tema" placeholder="Tema..." required>
+                </div>
+                <div class="fila">
+                    <textarea  name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." required></textarea>
+                </div>
+                <input class="btn-enviar" type="submit" value="Enviar Mensaje">
+
+            </form>
+
+        </section>
+
+
+    </main>
+    <script src="./funciones.js"></script>
+    <script src="./habilidades.json"></script>
+</body>
+
+</html>

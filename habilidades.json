@@ -1,0 +1,59 @@
+[
+    {
+        "titulo":"HTML",
+        "img":"./assets/html.png",
+        "conocimiento":"Mis conocimientos en HTML son medios."
+    },
+    {
+        "titulo":"CSS",
+        "img":"./assets/css.png",
+        "conocimiento":"Mis conocimientos en CSS son medios."
+    },
+    {
+        "titulo":"JAVASCRIPT",
+        "img":"./assets/js.png",
+        "conocimiento":"Mis conocimientos en JAVASCRIPT son medios."
+    },
+
+    {
+        "titulo":"GIT",
+        "img":"./assets/git.png",
+        "conocimiento":"Mis conocimientos en GIT son medios."
+    },
+
+    {
+        "titulo":"GITHUB",
+        "img":"./assets/github.png",
+        "conocimiento":"Mis conocimientos en GITHUB son medios."
+    },
+    
+    {
+        "titulo":"FIGMA",
+        "img":"./assets/figma.png",
+        "conocimiento":"Mis conocimientos en FIGMA son medios"
+    },
+
+    {
+        "titulo":"SUBLIME",
+        "img":"./assets/sublime.png",
+        "conocimiento":"Mis conocimientos en SUBLIME son medios."
+    },
+    
+    {
+        "titulo":"VISUAL STUDIO CODE",
+        "img":"./assets/vs.png",
+        "conocimiento":"Mis conocimientos en VSC son medios."
+    },
+
+
+    {
+        "titulo":"ATOM",
+        "img":"./assets/atom.png",
+        "conocimiento":"Mis conocimientos en ATOM son basicos."
+    }
+
+
+    
+
+    
+]
