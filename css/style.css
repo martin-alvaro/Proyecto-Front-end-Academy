@@ -3,10 +3,10 @@
     padding: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
-    
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -23,12 +23,12 @@ header {
 .container-header {
     max-width: 1100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-#nav{
+#nav {
     margin-right: 160px;
 }
 
@@ -43,7 +43,6 @@ header {
     color: white;
     margin: 0 12px;
     scroll-behavior: smooth
-
 }
 
 #nav ul a:hover {
@@ -59,9 +58,9 @@ header {
 
 
 
-.cv h1{
+.cv h1 {
     font-size: 25px;
-    color:white;
+    color: white;
 }
 
 
@@ -94,6 +93,8 @@ header {
 .showText {
     display: block;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -144,16 +145,16 @@ header {
     letter-spacing: 1px;
 }
 
-.sobremi  {
+.sobremi {
     font-size: 16px;
     color: #565656;
-    
+
 }
 
 
 
 #habilidades {
-    background-color: rgba(34, 34, 34, 0.068);
+    background: linear-gradient(90deg, rgba(162, 162, 162, 1) 21%, rgba(236, 155, 155, 1) 56%);
     color: rgb(0, 0, 0);
     margin-bottom: 66px;
 }
@@ -178,7 +179,7 @@ header {
     font-size: 1.2rem;
 }
 
-#hab article{
+#hab article {
     margin-bottom: 28px;
 }
 
@@ -208,25 +209,25 @@ header {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    
+
 }
 
-#hab article div h3{
+#hab article div h3 {
     padding: 0 30px 2px 30px;
     border-bottom: 3px solid;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-color: #FE9FF8;
+    border-color: black;
 }
 
 
-#contacto{
+#contacto {
     margin-top: 100px;
     height: 90vh;
     text-align: center;
 }
 
-#contacto h2{
+#contacto h2 {
     font-size: 30px;
     margin-bottom: 55px;
 
@@ -235,94 +236,136 @@ header {
 
 
 
-#contacto{
+#contacto {
     max-width: 1100px;
     margin: auto;
 }
 
-form input:focus{
+form input:focus {
     outline: none;
     border-color: #bb7be0bb;
 }
 
-form textarea:focus{
+form textarea:focus {
     outline: none;
     border-color: #bb7be0bb;
 }
 
-.fila_junta{
+.fila_junta {
     display: flex;
     justify-content: space-between;
     margin-bottom: 18px;
 }
 
-.fila{
+.fila {
     margin-bottom: 18px;
 }
 
 
-form input, textarea{
+form input,
+textarea {
     padding: 18px;
     border-radius: 18px;
     border: none;
-    border: 2.5px solid ;
+    border: 2.5px solid;
     font-size: 18px;
     background-color: white;
 
 }
 
-form:focus{
+form:focus {
     outline: none;
     border-color: #51a2d8;
 }
 
-.fila_junta input{
+.fila_junta input {
     width: 48%;
 }
 
-.fila input, textarea{
+.fila input,
+textarea {
     width: 100%;
 }
 
-.fila textarea{
+.fila textarea {
     resize: none;
 
 }
 
-@media screen and (max-width:800px){
-    
-    header{
+@media screen and (max-width:800px) {
+
+    header {
         height: 50px;
     }
-    
-    nav{
+
+    nav {
         display: none;
     }
 
-    nav.responsive{
+    nav.responsive {
         display: block;
         background-color: rgba(0, 0, 0, .8);
         width: 100%;
         position: absolute;
         top: 48px;
         left: 0;
-        padding: 10px 0;   
+        padding: 10px 0;
 
     }
 
-    nav.responsive ul{
+    nav.responsive ul {
         display: block !important;
         text-align: center;
 
     }
 
-    nav.responsive ul li{
+    nav.responsive ul li {
         margin: 5px 0;
     }
 
-    #nav-icon{
+    #nav-icon {
         display: block;
         font-size: 25px;
     }
 
+    #sobremi {
+        grid-template-columns: auto;
+        grid-template-areas: "info"
+            "img-datos";
+    }
+
+    .sobremi {
+        grid-area: info;
+        text-align: center;
+
+    }
+
+    .sobremi p {
+        margin-bottom: 70px;
+    }
+
+    .container-img {
+        margin: auto;
+        grid-area: img-datos;
+    }
+
+    .container-img div:first-child {
+        width: 60%;
+        margin: auto;
+    }
+
+   
+    .showText p {
+        margin: auto;
+        
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+
+    .showText {
+        flex-direction: column;
+    }
 }
