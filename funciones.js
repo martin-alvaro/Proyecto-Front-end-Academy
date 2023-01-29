@@ -27,7 +27,7 @@ function toggleText() {
       // console.log(data)
       data.forEach(hab => {
         document.getElementById("hab").innerHTML+=`
-        <article>
+        <article data-aos="flip-up">
           <div>
             <div>
               <img src="${hab.img}"</img>

@@ -21,46 +21,49 @@ header {
 }
 
 .container-header {
-    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-#nav {
-    margin-right: 160px;
+
+#nav{
+    width: 100%;
 }
 
 #nav ul {
+    justify-content: center;
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 #nav ul a {
     text-decoration: none;
     color: white;
     margin: 0 12px;
-    scroll-behavior: smooth
+    transition: all 600ms;
+    letter-spacing: 1px;
 }
 
 #nav ul a:hover {
-    color: #ff5080;
+    color: #ff0245;
 }
 
 #nav-icon {
-    position: absolute;
-    right: 10px;
     color: white;
     display: none;
+    
 }
 
 
 
 .cv h1 {
-    font-size: 25px;
-    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    -webkit-text-stroke: 0.9px rgb(67, 155, 141);
+    color: white; 
+    
 }
 
 
@@ -69,7 +72,6 @@ header {
     max-width: 1250px;
     margin: auto;
     padding: 100px 15px;
-    color: #111135;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -77,13 +79,17 @@ header {
 
 #readMore_btn {
     margin: 5px 0 6.5px 0;
-    font-size: 14.5px;
-    padding: 2px;
+    font-size: 16px;
+    padding: 5px;
     border-radius: 10px;
     border-color: #FE9FF8;
     background-color: white;
     cursor: pointer;
-    text-align: center;
+    transition: all 550ms;
+}
+
+.datos div :hover{
+    transform: scale(1.1);
 }
 
 .hideText {
@@ -93,14 +99,15 @@ header {
 .showText {
     display: block;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 
 .datos {
     text-align: center;
 }
+
+
 
 .showText p {
     margin: auto;
@@ -115,10 +122,12 @@ header {
     padding: 7px;
     border-radius: 20px;
     background-color: #ad9f9f;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .sobremi h2 {
+    font-family: 'Catamaran', sans-serif;
     font-size: 30px;
     color: #111135;
     text-decoration: underline;
@@ -130,11 +139,11 @@ header {
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
-    letter-spacing: 1px
+    letter-spacing: 3px
 }
 
 .sobremi h3 span {
-    color: #8b0f30;
+    color: #d86057;
 }
 
 .sobremi h4 {
@@ -142,13 +151,14 @@ header {
     font-weight: 500;
     text-transform: uppercase;
     margin: 20px 0;
+    color: #565656;
     letter-spacing: 1px;
 }
 
-.sobremi {
-    font-size: 16px;
+.sobremi p{
+    font-size: 14px;
     color: #565656;
-
+    font-family: 'Unbounded', cursive;
 }
 
 
@@ -156,15 +166,16 @@ header {
 #habilidades {
     background: linear-gradient(90deg, rgba(162, 162, 162, 1) 21%, rgba(236, 155, 155, 1) 56%);
     color: rgb(0, 0, 0);
-    margin-bottom: 66px;
+    margin-bottom: 75px;
 }
 
 #habilidades h2 {
-    margin-bottom: 52px;
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 80px;
     text-align: center;
     font-size: 30px;
     position: relative;
-    top: 55px;
+    top: 75px;
 }
 
 
@@ -181,13 +192,21 @@ header {
 
 #hab article {
     margin-bottom: 28px;
+    transition: all 400ms;
 }
 
+#hab article:hover{
+    transform: scale(1.1);
+}
+
+#hab article p{
+    font-family: 'Unbounded', cursive;
+    font-size: 1rem;
+
+}
 
 #hab article div div img {
     width: 50px;
-    z-index: 2;
-    background-color: rgba(255, 240, 0, 0);
 }
 
 #hab article div div {
@@ -229,6 +248,7 @@ header {
 
 #contacto h2 {
     font-size: 30px;
+    font-family: 'Catamaran', sans-serif;
     margin-bottom: 55px;
 
 }
@@ -262,14 +282,12 @@ form textarea:focus {
 }
 
 
-form input,
-textarea {
+form input, textarea {
     padding: 18px;
     border-radius: 18px;
     border: none;
     border: 2.5px solid;
     font-size: 18px;
-    background-color: white;
 
 }
 
@@ -292,10 +310,22 @@ textarea {
 
 }
 
+.btn-enviar{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width:800px) {
 
     header {
         height: 50px;
+    }
+
+    .container-header{
+        padding:  5px 20px
+    
     }
 
     nav {
@@ -324,7 +354,7 @@ textarea {
     }
 
     #nav-icon {
-        display: block;
+        display: block !important;
         font-size: 25px;
     }
 
@@ -342,6 +372,7 @@ textarea {
 
     .sobremi p {
         margin-bottom: 70px;
+        font-family: 'Unbounded', cursive;
     }
 
     .container-img {

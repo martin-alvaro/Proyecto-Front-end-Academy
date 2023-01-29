@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front end Academy-Proyecto Final</title>
+    <meta property="og:tittle" content="Front end Academy-Proyecto Final"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Este es el proyecto final integrador de Ticmas Academy"/>
     <script defer src="https://kit.fontawesome.com/ab15aef633.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Mulish:ital,wght@0,400;1,200;1,500&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,12 +38,14 @@
     </header>
     <main>
         <section id="sobremi">
-            <div class="container-img">
+            <div class="container-img"  data-aos="fade-right">
                 <div>
                     <img src="./assets/foto.png" alt="Foto-Perfil">
                 </div>
                 <div class="datos">
-                    <button id="readMore_btn" onclick="mostrar()">Mas info</button>
+                    <div>
+                        <button id="readMore_btn" onclick="mostrar()">Mas info</button>
+                    </div>
                     <span id="hideText" class="hideText">
                         <p>Edad:<span id="dato1"></span></p>
                         <p>Pais:<span id="dato2"></span></p>
@@ -44,9 +53,9 @@
                     </span>
                 </div>
             </div>
-            <div class="sobremi">
+            <div class="sobremi" data-aos="fade-left">
                 <h2>Sobre mí</h2>
-                <h3>Hola, Soy <span> Eugene crawford</span></h3>
+                <h3>Hola, Soy <span> Eugene Crawford</span></h3>
                 <h4>Soy Desarrolador Web</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Sed vulputate odio ut enim blandit. Aliquam purus sit amet luctus venenatis
@@ -60,7 +69,7 @@
                     ac tortor. Vitae congue mauris rhoncus aenean vel elit. Iaculis eu non diam phasellus vestibulum
                     lorem. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Sed cras ornare arcu dui
                     vivamus arcu. Auctor augue mauris augue neque. Egestas integer eget aliquet nibh praesent. Convallis
-                    a cras semper auctor neque vitae. </p>
+                    a cras semper auctor neque vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus a, tenetur, aliquid, corporis dolore officiis ullam doloribus fuga fugit impedit. Reiciendis reprehenderit enim debitis nemo ut voluptatum inventore sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab minus temporibus porro enim nulla amet dignissimos fugiat? Magni, incidunt. Sed natus iusto ipsum dolorem unde fugiat molestias omnis numquam. </p>
             </div>
         </section>
         <section id="habilidades">
@@ -72,10 +81,9 @@
 
         <section id="contacto">
             <h2>CONTÁCTAME</h2>
-
-            <form action="" method="get">
-                <div class="fila_junta">
-                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+            <form action="" method="get" data-aos="flip-left">
+                <div class="fila_junta" >
+                    <input type="text" name="nombre" placeholder=" Nombre Completo" required>
                     <input type="email" name="email" placeholder="Correo Electrónico" required>
                 </div>
                 <div class="fila">
@@ -94,6 +102,12 @@
     </main>
     <script src="./funciones.js"></script>
     <script src="./habilidades.json"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>
+        AOS.init({
+            duration:2000
+        });
+      </script>
+
 </body>
 
 </html>
